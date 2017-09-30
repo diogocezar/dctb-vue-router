@@ -3,6 +3,7 @@ import Router 		from 'vue-router'
 import Home 		from '@/components/Home'
 import Contact 		from '@/components/Contact'
 import Products 	from '@/components/Products'
+import Git 			from '@/components/Git'
 
 Vue.use(Router)
 
@@ -24,6 +25,11 @@ export default new Router({
 			path: '/products/:id',
 			name: 'Products',
 			component: Products
+		},
+		{
+			path: '/git',
+			name: 'Git',
+			component: Git
 		},
 	]
 })
